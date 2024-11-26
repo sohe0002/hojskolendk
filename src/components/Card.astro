@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import rejse1 from "../assets/images/rejse1.jpg";
+
+const {
+  cardimage = "",
+  cardimagealt = "",
+
+  land1 = "",
+  land2 = "",
+  land3 = "",
+  land4 = "",
+  land5 = "",
+  land6 = "",
+} = Astro.props;
+---
+
+<section class="">
+  <div
+    class="relative w-[170px] h-[400px] md:w-[250px] md:h-[600px] lg:w-[300px] lg:h-[700px] overflow-hidden rounded-small grid justify-items-center justify-self-center"
+  >
+    <!-- Baggrundsbillede -->
+
+    <img
+      src={cardimage}
+      alt={cardimagealt}
+      class="absolute inset-0 w-full h-full object-cover brightness-75"
+    />
+
+    <!-- Tekstoverlay -->
+    <div
+      class="absolute bottom-xs left-xxs lg:left-xs w-full bg-gradient-to-t from-black via-transparent to-transparent p-4"
+    >
+      <h2
+        class="text-blaa-50 text-h3_mobil font-bold leading-6 md:text-h4_desk lg:text-h3_desk lg:leading-10"
+      >
+        {land1}
+      </h2>
+      <h2
+        class="text-blaa-50 text-h3_mobil font-bold leading-6 md:text-h4_desk lg:text-h3_desk lg:leading-10"
+      >
+        {land2}
+      </h2>
+      <h2
+        class="text-blaa-50 text-h3_mobil font-bold leading-6 md:text-h4_desk lg:text-h3_desk lg:leading-10"
+      >
+        {land3}
+      </h2>
+      <h2
+        class="text-blaa-50 text-h3_mobil font-bold leading-6 md:text-h4_desk lg:text-h3_desk lg:leading-10"
+      >
+        {land4}
+      </h2>
+      <h2
+        class="text-blaa-50 text-h3_mobil font-bold leading-6 md:text-h4_desk lg:text-h3_desk lg:leading-10"
+      >
+        {land5}
+      </h2>
+      <h2
+        class="text-blaa-50 text-h3_mobil font-bold leading-6 md:text-h4_desk lg:text-h3_desk lg:leading-10"
+      >
+        {land6}
+      </h2>
+    </div>
+  </div>
+</section>
