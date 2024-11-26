@@ -1,15 +1,748 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import "motion";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import solmobile from "../assets/images/sol_mobile.svg";
+import sol from "../assets/images/sol.svg";
+import Card from "../components/Card.astro";
+import stemning1 from "../assets/images/stemning1.jpg";
+import stemning2 from "../assets/images/stemning2.jpg";
+import stemning3 from "../assets/images/stemning3.jpg";
+import stemning4 from "../assets/images/stemning4.jpg";
+import stemning5 from "../assets/images/stemning5.jpg";
+import stemning6 from "../assets/images/stemning6.jpg";
+import stemning7 from "../assets/images/stemning7.jpg";
+import stemning8 from "../assets/images/stemning8.jpg";
+import stemning9 from "../assets/images/stemning9.jpg";
+import stemning10 from "../assets/images/stemning10.jpg";
+import stemning11 from "../assets/images/stemning11.jpg";
+import stemning12 from "../assets/images/stemning12.jpg";
+import infobillede from "../assets/images/infobillede.jpg";
+import storinfobillede from "../assets/images/storinfobillede.jpg";
+import ligeværd from "../assets/images/ligeværd.jpg";
+import integritet from "../assets/images/integritet.jpg";
+import mod from "../assets/images/mod.jpg";
+import fællesskab from "../assets/images/fællesskab.jpg";
+import trustpilot1 from "../assets/images/trustpilot1.jpg";
+import trustpilot2 from "../assets/images/trustpilot2.jpg";
+import trustpilot3 from "../assets/images/trustpilot3.jpg";
+import trustpilot4 from "../assets/images/trustpilot4.jpg";
+import palme from "../assets/images/palme.png";
+import palmer from "../assets/images/palmer.jpg";
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+  <article>
+    <section id="hero">
+      <h1
+        class="font-acme text-h1_mobil text-blaa-300 lg:text-h1_desk grid justify-items-center"
+      >
+        HØJSKOLE I UDLANDET
+      </h1>
+      <h2
+        class="font-inter text-h2_mobil font-bold text-blaa-300 lg:text-h2_desk grid justify-items-center"
+      >
+        EVENTYRLIGE HØJSKOLEOPHOLD I UDLANDET FOR UNGE
+      </h2>
+    </section>
+
+    <section class="px-lg lg:px-2xl pt-m">
+      <h2
+        class="font-inter text-h2_mobil font-bold lg:text-h2_desk pt-lg text-blaa-950 lg:grid lg:justify-items-center"
+      >
+        SKAB MINDER FOR LIVET - KOM PÅ HØJSKOLEEVENTYR!
+      </h2>
+      <div class="lg:grid lg:grid-cols-2 pt-s">
+        <p class="font-inter text-p_mobil lg:text-p_desk text-blaa-950">
+          Tag på højskole i udlandet og oplev verden på en helt ny måde! Hos
+          HÖJSKOLENDK kombinerer vi rejseeventyr, fællesskab og spændende
+          undervisning for unge mellem 18-30 år. Forestil dig fællesskab, nye
+          venner, fantastiske landskaber og spændende kulturer, der sætter spor
+          for livet.
+        </p>
+        <p class="font-inter text-p_mobil lg:text-p_desk text-blaa-950">
+          Med os er du sikret uforglemmelige oplevelser, stærke venskaber og
+          tryghed hele vejen – vi er medlem af Rejsegarantifonden. Bliv
+          underholdt, udvikl dig og skab minder, der varer for evigt. Vi glæder
+          os til at tage dig med på dit livs rejse!
+        </p>
+      </div>
+      <Image
+        src={sol}
+        class="mx-auto w-xl pt-lg pb-xl lg:w-4xl"
+        alt="billede af sol"
+      />
+    </section>
+
+    <section class="pb-lg px-lg lg:px-2xl" id="rejser">
+      <h2
+        class="grid justify-items-center pb-s font-inter text-h2_mobil font-bold lg:text-h2_desk"
+      >
+        VORES REJSER
+      </h2>
+      <div class="grid grid-cols-2 gap-m justify-items-center lg:grid-cols-4">
+        <Card
+          cardimage="rejse1.jpg"
+          cardimagealt="hawaii"
+          land1="CARIBIEN"
+          land2="HAWAII"
+          land3="MEXICO"
+          land4=""
+        />
+        <Card
+          cardimage="rejse2.jpg"
+          cardimagealt="australien"
+          land1="AUSTRALIEN"
+          land2="NEW ZEALAND"
+          land3="BALI"
+          land4="GILI ISLAND"
+        />
+        <Card
+          cardimage="rejse3.jpg"
+          cardimagealt="COLOMBIA"
+          land1="COSTA RICA"
+          land2="MEXICO"
+          land3="COLOMBIA"
+          land4=""
+        />
+        <Card
+          cardimage="rejse4.jpg"
+          cardimagealt="INDIEN"
+          land1="INDIEN"
+          land2="NEPAL"
+          land3="THAILAND"
+          land4="VIETNAM"
+          land5="SRI LANKA"
+        />
+        <Card
+          cardimage="rejse5.jpg"
+          cardimagealt="hawaii"
+          land1="HAWAII"
+          land2="AUSTRALIEN"
+          land3="JAPAN"
+          land4="BALI"
+          land="GILI ISLANDS"
+        />
+        <Card
+          cardimage="rejse6.jpg"
+          cardimagealt="MALDIVERNE"
+          land1="MALDIVERNE"
+          land2="SRI LANKA"
+          land3="BALI"
+          land4="GILI ISLANDS"
+        />
+        <Card
+          cardimage="rejse7.jpg"
+          cardimagealt="BRASILIEN"
+          land1="BRASILIEN"
+          land2="BOLIVIA"
+          land3="COLOMBIA"
+          land4="EDUADOR"
+          land5="PERU"
+          land6="AGENTINA"
+        />
+        <Card
+          cardimage="rejse8.jpg"
+          cardimagealt="AUSTRALIEN"
+          land1="AUSTRALIEN"
+          land2="JAPAN"
+          land3="BALI"
+          land4="GILI ISLANDS"
+        />
+      </div>
+    </section>
+
+    <section class="relative w-full px-xs pt-m bg-gron-600 text-blaa-950">
+      <div class="mx-auto px-5">
+        <div class="">
+          <h2 class="my-s text-h2_mobil md:text-xl">
+            SPØRGSMÅL OG SVAR TIL OFTE STILLEDE SPØRGSMÅL
+          </h2>
+        </div>
+        <div class="mt-s">
+          <!-- FAQ Item 1 -->
+          <div class="py-xs">
+            <details class="group">
+              <summary
+                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+              >
+                <span>HVAD KOSTER ET HØJSKOLEOPHOLD?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-s text-blaa-950 text-p_mobil"
+              >
+                Priserne på opholdene varierer alt efter hvilken rejse du vælger
+                og hvornår du vil afsted. Tjek priserne på prissiden. Læs mere
+                her.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <div class="mt-s">
+          <!-- FAQ Item 2 -->
+          <div class="pt-xs">
+            <details class="group">
+              <summary
+                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+              >
+                <span>HVORNÅR ER DER INFOMØDER?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-s text-blaa-950 text-p_mobil"
+              >
+                Deltag i vores infomøder i København, Aarhus eller online. Vi
+                fortæller om højskolelivet, undervisning, aktiviteter, praktisk
+                info og meget mere. Slut af med at møde tidligere elever og
+                rejseledere til vores ’Rejsefeber Café’. København:
+                Studenterhuset, Købmagergade 52  Aarhus: LYNfabrikken,
+                Vestergade 49B Vi glæder os til at møde dig!
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <div class="mt-s">
+          <!-- FAQ Item 3 -->
+          <div class="py-xs">
+            <details class="group">
+              <summary
+                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+              >
+                <span>GÅR I OP I BÆREDYGTIGHED?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-s text-blaa-950 text-p_mobil"
+              >
+                Hos HÖJSKOLENDK skaber vi eventyrlige og bæredygtige
+                højskoleophold med fokus på miljøansvar. Vi planter 50 træer pr.
+                elev, kompenserer for vores CO2-aftryk, beskytter regnskov og
+                stiller krav om dyrevelfærd og ansvarlig turisme.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <div class="mt-s">
+          <!-- FAQ Item 4-->
+          <div class="py-xs">
+            <details class="group">
+              <summary
+                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+              >
+                <span>KAN MAN TAGE AFSTED UD AT KENDE NOGLE?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-s text-blaa-950 text-p_mobil"
+              >
+                Ja, du kan sagtens tage afsted uden at kende nogen. Langt de
+                fleste rejser ”alene” og møder først de andre på afrejsemødet.
+                Alle er i samme båd, og det skaber åbenhed, nysgerrighed og
+                hurtigt nye venskaber. På vores rejser er fællesskabet i fokus,
+                og vi tager ansvar for, at alle trives og får deres livs
+                rejseeventyr. Det er ikke bare en grupperejse – det er et
+                højskoleophold med stærke fællesskabsbånd og unikke oplevelser.
+              </p>
+            </details>
+          </div>
+        </div>
+        <div class="mt-s">
+          <!-- FAQ Item 5-->
+          <div class="py-xs">
+            <details class="group">
+              <summary
+                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+              >
+                <span>ER DER MEGET FRITID?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+              <p
+                class="group-open:animate-fadeIn mt-s text-blaa-950 text-p_mobil"
+              >
+                Friugerne er en populær del af vores højskoleophold. Efter et
+                spændende undervisningsforløb bruger eleverne dem til alt fra
+                rejser til hygge. Nogle rejser ud med nye venner og udforsker
+                området, mens andre bliver på højskolen. Den sidste friuge
+                bruges ofte på fællesskab, hvor der hygges, festes og deles
+                minder. Et Award-show med kåringer er et højdepunkt, inden turen
+                går hjem til Danmark. Friugerne skaber balance og styrker
+                fællesskabet.
+              </p>
+            </details>
+          </div>
+        </div>
+        <div class="mt-s">
+          <!-- FAQ Item 6-->
+          <div class="py-xs">
+            <details class="group">
+              <summary
+                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+              >
+                <span>HVAD GØR I FOR AT SKABE ET GODT FÆLLESSKAB?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    width="24"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </summary>
+
+              <p
+                class="group-open:animate-fadeIn mt-s text-blaa-950 text-p_mobil"
+              >
+                Fællesskabet hos HÖJSKOLENDK skabes gennem inspirerende
+                undervisning, teambuilding og unikke oplevelser. Eleverne
+                udvikler dybe venskaber, styrker relationer og udforsker både
+                destinationer og sig selv på en måde, der ikke opnås ved at
+                rejse alene.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-lg">
+      <p class="font-inter text-h4_mobil italic lg:text-p_desk py-s">
+        <span class="font-bold text-orange-500 text-h4_desk lg:text-h2_desk"
+          >"</span
+        > HöjskolenDK giver en tryg og sikker rejseform
+      </p>
+      <p
+        class="font-inter text-h4_mobil italic lg:text-p_desk flex justify-end"
+      >
+        <span class="font-bold text-orange-500 text-h4_desk lg:text-h2_desk"
+          >"</span
+        > Kan anbefale HöjskolenDK til alle, der kunne tænke sig en fantastisk rejse
+        og venner for livet
+      </p>
+      <p class="font-inter text-h4_mobil italic lg:text-p_desk pb-m">
+        <span class="font-bold text-orange-500 text-h4_desk lg:text-h2_desk"
+          >"</span
+        > Helt igennem den bedste beslutning jeg nogensinde har taget
+      </p>
+      <div
+        class="grid grid-rows-2 justify-items-center lg:grid-cols-2 lg:hidden"
+      >
+        <div class="grid grid-cols-2 gap-xs pb-xs">
+          <Image src={stemning1} class="" alt="billede af stemning" />
+          <Image src={stemning2} class="" alt="billede af stemning" />
+          <Image src={stemning3} class="" alt="billede af stemning" />
+          <Image src={stemning4} class="" alt="billede af stemning" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-xs">
+          <Image src={stemning5} class="" alt="billede af stemning" />
+          <Image src={stemning6} class="" alt="billede af stemning" />
+          <Image src={stemning7} class="" alt="billede af stemning" />
+          <Image src={stemning8} class="" alt="billede af stemning" />
+        </div>
+      </div>
+
+      <div
+        class="lg:grid lg:grid-cols-4 justify-items-center justify-self-center gap-xs h-full w-auto hidden lg:block"
+      >
+        <Image src={stemning1} class="" alt="billede af stemning" />
+        <Image src={stemning2} class="" alt="billede af stemning" />
+        <Image src={stemning3} class="" alt="billede af stemning" />
+        <Image src={stemning4} class="" alt="billede af stemning" />
+        <Image src={stemning5} class="" alt="billede af stemning" />
+        <Image src={stemning6} class="" alt="billede af stemning" />
+        <Image src={stemning7} class="" alt="billede af stemning" />
+        <Image src={stemning8} class="" alt="billede af stemning" />
+      </div>
+
+      <p class="font-inter text-h4_mobil italic lg:text-p_desk pb-s pt-m">
+        <span class="font-bold text-orange-500 text-h4_desk lg:text-h2_desk"
+          >"</span
+        > HöjskolenDK har givet mig så meget mere end blot en rejse
+      </p>
+      <p
+        class="font-inter text-h4_mobil italic lg:text-p_desk flex justify-end pb-lg"
+      >
+        <span class="font-bold text-orange-500 text-h4_desk lg:text-h2_desk"
+          >"</span
+        > Så god beslutning! Uden tvivl en helt fantastisk rejse, fyldt med de dejligste
+        mennesker, og gode rejseledere
+      </p>
+    </section>
+
+    <section class="bg-blaa-200 lg:grid lg:grid-cols-2">
+      <Image
+        src={infobillede}
+        class="block lg:hidden"
+        alt="billede af stemning"
+      />
+      <Image
+        src={storinfobillede}
+        class="hidden lg:block"
+        alt="billede af stemning"
+      />
+
+      <div>
+        <h2
+          class="font-inter text-h2_mobil text-blaa-900 font-bold pt-m lg:text-h2_desk"
+        >
+          INFOMØDER
+        </h2>
+        <p class="font-inter text-p_mobil lg:text-p_desk lg:py-m">
+          Drømmer du om et rejseeventyr fyldt med adventure, betagende
+          naturoplevelser og unikke kulturmøder? <br /><br /> Så kom og mærk højskolestemningen
+          til et af vores hyggelige infomøder i København eller Aarhus – eller deltag
+          hjemmefra på et inspirerende online møde.
+        </p>
+
+        <div>
+          <h4
+            class="font-inter text-h4_mobil font-bold text-orange-500 lg:text-h4_desk"
+          >
+            KØBENHAVN
+          </h4>
+
+          <p class="font-inter text-p_mobil italic lg:text-p_desk lg:pb-m">
+            16. Januar 2025 - kl. 17-19
+          </p>
+        </div>
+
+        <div>
+          <h4
+            class="font-inter text-h4_mobil font-bold text-orange-500 lg:text-h4_desk"
+          >
+            ÅRHUS
+          </h4>
+
+          <p class="font-inter text-p_mobil italic lg:text-p_desk lg:pb-m">
+            14. Januar 2025 - kl. 17-19
+          </p>
+        </div>
+
+        <div>
+          <h4
+            class="font-inter text-h4_mobil font-bold text-orange-500 lg:text-h4_desk"
+          >
+            ONLINE INFORMØDE
+          </h4>
+
+          <p class="font-inter text-p_mobil italic lg:text-p_desk">
+            13. November 2024 - kl. 17-19
+          </p>
+          <p class="font-inter text-p_mobil italic lg:text-p_desk">
+            21. Januar 2025 - kl. 17-19
+          </p>
+        </div>
+        <div class="py-m">KNAP</div>
+      </div>
+    </section>
+
+    <section class="px-lg py-lg">
+      <div class="grid grid-cols-2">
+        <div>
+          <Image src={ligeværd} class="" alt="billede af stemning" />
+          <h3 class="font-inter font-bold text-h3_mobil text-gron-800">
+            LIGEVÆRD & RESPEKT
+          </h3>
+        </div>
+        <div>
+          <Image src={integritet} class="" alt="billede af stemning" />
+          <h3 class="font-inter font-bold text-h3_mobil text-gron-800">
+            INTEGRITET & ÆRLIGHED
+          </h3>
+        </div>
+        <div>
+          <Image src={mod} class="" alt="billede af stemning" />
+          <h3 class="font-inter font-bold text-h3_mobil text-gron-800">
+            MOD & RUMMELIGHED
+          </h3>
+        </div>
+        <div>
+          <Image src={fællesskab} class="" alt="billede af stemning" />
+          <h3 class="font-inter font-bold text-h3_mobil text-gron-800">
+            FÆLLESSKAB & SJOV
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="p-lg px-2xl bg-orange-300 lg:grid lg:grid-cols-2 lg:gap-2xl"
+    >
+      <div class="">
+        <h2
+          class="font-inter font-bold text-gron-950 text-h2_mobil pb-s lg:text-h2_desk"
+        >
+          REJSE HØJSKOLE
+        </h2>
+
+        <p class="font-inter text-p_mobil pb-lg lg:text-p_desk">
+          Tag på højskole i udlandet og oplev et unikt eventyr med stærkt
+          fællesskab og spændende rejseoplevelser. <br /><br />
+
+          Brug dit sabbatår på frivilligt arbejde, adventure, sprog og personlig
+          udvikling, som giver dig øget selvtillid og selvindsigt. <br /><br />
+
+          Vores elever beskriver HÖJSKOLENDK som ”eventyrlige dannelsesrejser
+          med noget på hjerte.” Vi fokuserer på at flytte dine grænser og hjælpe
+          dig med at finde afklaring om din fremtid. <br /><br />
+
+          Tag på højskole i udlandet, hvis du ønsker et eventyr, der inspirerer
+          og styrker dig.
+        </p>
+      </div>
+      <div class="">
+        <h2
+          class="font-inter font-bold text-gron-950 text-h2_mobil pb-s lg:text-h2_desk"
+        >
+          HØJSKOLE I UDLANDET
+        </h2>
+        <p class="font-inter text-p_mobil pb-s lg:text-p_desk font-semibold">
+          Når du rejser med HÖJSKOLENDK, får du:
+        </p>
+
+        <ul class="font-inter text-p_mobil pb-s lg:text-p_desk">
+          <li>Et stærkt fællesskab og masser af naturoplevelser</li>
+          <li>Nye, spændende kulturer og adventure</li>
+          <li>Øget selvtillid og personlig udvikling</li>
+          <li>Passionerede rejseledere og undervisere</li>
+          <li>Et unikt, trygt rejseeventyr</li>
+        </ul>
+
+        <p class="font-inter text-p_mobil pb-s lg:text-p_desk">
+          Vores kombination af højskole, rejseeventyr og spændende undervisning
+          hjælper dig med at finde ud af, hvad der er meningsfuldt for dig – så
+          du kan forfølge dine drømme.
+        </p>
+
+        <p class="font-inter font-bold text-p_mobil lg:text-p_desk italic">
+          Opdag dit livs eventyr med HÖJSKOLENDK!
+        </p>
+      </div>
+
+      <Image
+        src={palme}
+        alt="billede af palme"
+        class="block mx-auto max-w-full"
+      />
+    </section>
+
+    <section class="px-lg pb-lg">
+      <h2
+        class="font-inter font-bold text-h2_mobil grid justify-items-center pt-xl pb-s lg:text-h2_desk"
+      >
+        TRUSTPILOT
+      </h2>
+
+      <div class="lg:grid lg:grid-cols-4">
+        <Image
+          src={trustpilot1}
+          class="mx-auto pb-m"
+          alt="billede af trustpilotanmeldelse"
+        />
+        <Image
+          src={trustpilot2}
+          class="mx-auto"
+          alt="billede af trustpilotanmeldelse"
+        />
+        <Image
+          src={trustpilot3}
+          class="mx-auto hidden lg:block"
+          alt="billede af trustpilotanmeldelse"
+        />
+        <Image
+          src={trustpilot4}
+          class="mx-auto hidden lg:block"
+          alt="billede af trustpilotanmeldelse"
+        />
+      </div>
+    </section>
+
+    <section class="bg-gron-600 lg:grid lg:grid-cols-2">
+      <div>
+        <h2
+          class="font-inter font-bold text-h2_mobil text-brun-950 pt-lg pb-s lg:grid lg:text-h2_desk px-lg"
+        >
+          HØJSKOLE I UDLANDET FOR UNGE
+        </h2>
+        <p class="font-inter text-p_mobil lg:text-p_desk px-lg">
+          Drømmer du om et eventyr i udlandet? Med HÖJSKOLENDK får du
+          uforglemmelige oplevelser, fællesskab og meningsfuld læring. Et
+          højskoleophold i udlandet giver dig nye venskaber og oplevelser for
+          livet. <br /><br />
+
+          Vælg mellem rejser til Bali, Hawaii, Maldiverne, Australien, New York,
+          Tokyo, Rio, Indien, Bolivia, Japan, Costa Rica og mange andre
+          spændende steder. Oplev natur, storbyer, kultur og adrenalinfyldte
+          eventyr sammen med andre unge og danske rejseledere. <br /><br />
+
+          Højskolerejsen er ikke kun et eventyr i verden, men også en rejse mod
+          personlig udvikling, selvtillid og selvværd.
+        </p>
+      </div>
+      <Image src={palmer} class="w-full" alt="billede af palmelogoet" />
+    </section>
+
+    <section class="px-2xl pb-lg">
+      <h2
+        class="font-inter font-bold text-h2_mobil text-brun-950 pt-lg pb-s lg:text-h2_desk"
+      >
+        EN REJSEHØJSKOLE FYLDT MED OPLEVELSER
+      </h2>
+      <p class="font-inter text-p_mobil pb-s lg:text-p_desk">
+        Vi tilbyder spændende ophold, hvor du besøger flere lande og deltager i
+        inspirerende undervisning og aktiviteter.
+      </p>
+      <div class="lg:grid lg:grid-cols-2 gap-8xl">
+        <div>
+          <p class="font-inter text-p_mobil font-bold lg:text-p_desk">
+            TEAMBUILDING:
+          </p>
+          <p class="font-inter text-p_mobil pb-s lg:text-p_desk">
+            Rejs med andre unge og udvikl dine samarbejdsevner, samtidig med at
+            du får erfaring, der styrker både studie og karriere.
+          </p>
+
+          <p class="font-inter text-p_mobil font-bold lg:text-p_desk">
+            FRIVILLIGT ARBEJDE & KULTURFORSTÅELSE:
+          </p>
+          <p class="font-inter text-p_mobil pb-s lg:text-p_desk">
+            Involver dig i frivilligt arbejde, få indsigt i lokale kulturer og
+            oplev verden på en ny måde.
+          </p>
+
+          <p class="font-inter text-p_mobil font-bold lg:text-p_desk">
+            FRIUGER:
+          </p>
+          <p class="font-inter text-p_mobil pb-s lg:text-p_desk">
+            Udforsk landet på egen hånd i de indlagte friuger – enten med små
+            grupper eller hele holdet.
+          </p>
+        </div>
+        <div>
+          <p class="font-inter text-p_mobil font-bold lg:text-p_desk">
+            SPÆNDENDE KULTUROPLEVELSER:
+          </p>
+          <p class="font-inter text-p_mobil pb-s lg:text-p_desk">
+            Oplev kulturer tæt på, fra Hindu-templer i Indien til Maya-ruiner i
+            Mexico, og få unik indsigt i de lokale traditioner.
+          </p>
+
+          <p class="font-inter text-p_mobil font-bold lg:text-p_desk">
+            VILDE NATUROPLEVELSER:
+          </p>
+          <p class="font-inter text-p_mobil lg:text-p_desk">
+            Snorkel i Caribien, river raft i Thailand eller vandr i Himalaya –
+            vores ophold byder på eventyrlige naturoplevelser, du aldrig vil
+            glemme.
+          </p>
+        </div>
+      </div>
+      <Image
+        src={sol}
+        class="mx-auto w-xl pt-lg lg:w-4xl"
+        alt="billede af sol"
+      />
+    </section>
+
+    <section class="px-lg bg-blaa-500 pb-lg">
+      <h2
+        class="font-inter font-bold text-h2_mobil text-brun-950 pt-lg pb-s lg:text-h2_desk"
+      >
+        UFORGLEMMELIGT HØJSKOLE OPHOLD I UDLANDET
+      </h2>
+      <div>
+        <Image
+          src={stemning9}
+          class="mx-auto"
+          alt="billede af stemning col-span-2"
+        />
+      </div>
+      <div
+        class="grid grid-cols-2 justify-items-center justify-center items-center pb-lg"
+      >
+        <Image src={stemning10} class="row-span-1" alt="billede af stemning" />
+        <Image src={stemning11} class="row-span-2" alt="billede af stemning" />
+        <Image src={stemning12} class="row-span-1" alt="billede af stemning" />
+      </div>
+
+      <p class="font-inter text-p_mobil lg:text-p_desk">
+        HÖJSKOLENDK tilbyder rejser året rundt – både korte sommerophold på ca.
+        5 uger og længere ophold på 2-3 måneder. <br /><br /> Sommeropholdet er perfekt
+        til dig, der vil opleve flere lande og kulturer på kort tid, mens ophold
+        i løbet af året er ideelt for sabbatårselever, der ønsker personlig udvikling
+        og et eventyr.
+      </p>
+
+      <p class="font-inter text-p_mobil lg:text-p_desk">
+        Uanset hvilken rejse du vælger, får du en uforglemmelig oplevelse med
+        andre unge og masser af læring.
+      </p>
+
+      <p class="font-inter text-p_mobil text-center pt-lg lg:text-p_desk">
+        Uanset hvilken rejse du vælger, får du en uforglemmelig oplevelse med
+        andre unge og masser af læring.
+      </p>
+    </section>
+  </article>
+
+  <script></script>
 </MainLayout>
