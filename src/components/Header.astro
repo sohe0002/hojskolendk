@@ -1,5 +1,19 @@
 ---
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.svg";
+import Button from "./Button.astro";
 ---
-<div>
-Header - tilføj navigation mm.
-</div>
+
+<section class="bg-gron-200 flex place-content-between p-s self-center">
+  <a href="/"> <Image src={logo} alt="" class="w-[150px]" /></a>
+
+  <nav id="desktopmenu" class="">
+    <ul class="flex gap-6 text-orange-500 font-inter gap-xs">
+      <li><Link href="/cocktail_index">INFOMØDE</Link></li>
+      <li><Link href="/cocktail_kursus">REJSER</Link></li>
+      <li><Link href="/kontakt">PRISER</Link></li>
+      <li><Link href="/kontakt">TILMELD</Link></li>
+    </ul>
+  </nav>
+</section>
