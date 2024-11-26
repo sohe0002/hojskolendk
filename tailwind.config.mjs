@@ -109,10 +109,10 @@ fontFamily: {
 
         /* Tilføj dit typografiske hierarki herunder */
 fontSize: {
-p_desk: ['20px', { lineHeight: '1.25rem' }],
-h4_desk: ['24px', { lineHeight: '2.25rem' }],
-h3_desk: ['31px', { lineHeight: '3rem' }],
-h2_desk: ['36px', { lineHeight: '3.75rem' }],
+p_desk: ['16px', { lineHeight: '1.25rem' }],
+h4_desk: ['20px', { lineHeight: '2.25rem' }],
+h3_desk: ['28px', { lineHeight: '3rem' }],
+h2_desk: ['32px', { lineHeight: '3.75rem' }],
 h1_desk: ['64px', { lineHeight: '4.5rem' }],
 
 p_mobil: ['12px', { lineHeight: '1.25rem' }],

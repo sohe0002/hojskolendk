@@ -428,15 +428,15 @@ import palmer from "../assets/images/palmer.jpg";
       </p>
     </section>
 
-    <section class="bg-blaa-200 lg:grid lg:grid-cols-2">
+    <section class="bg-blaa-200 lg:grid lg:grid-cols-2 p-m">
       <Image
         src={infobillede}
-        class="block lg:hidden"
+        class="block lg:hidden  rounded-small h-[440px] object-cover"
         alt="billede af stemning"
       />
       <Image
         src={storinfobillede}
-        class="hidden lg:block"
+        class="hidden lg:block "
         alt="billede af stemning"
       />
 
@@ -453,9 +453,9 @@ import palmer from "../assets/images/palmer.jpg";
           hjemmefra på et inspirerende online møde.
         </p>
 
-        <div>
+        <div class="pt-xs">
           <h4
-            class="font-inter text-h4_mobil font-bold text-orange-500 lg:text-h4_desk"
+            class="font-inter text-h4_mobil text-orange-500 lg:text-h4_desk"
           >
             KØBENHAVN
           </h4>
@@ -465,9 +465,9 @@ import palmer from "../assets/images/palmer.jpg";
           </p>
         </div>
 
-        <div>
+        <div class="pt-xs">
           <h4
-            class="font-inter text-h4_mobil font-bold text-orange-500 lg:text-h4_desk"
+            class="font-inter text-h4_mobil text-orange-500 lg:text-h4_desk"
           >
             ÅRHUS
           </h4>
@@ -477,9 +477,9 @@ import palmer from "../assets/images/palmer.jpg";
           </p>
         </div>
 
-        <div>
+        <div class="pt-xs">
           <h4
-            class="font-inter text-h4_mobil font-bold text-orange-500 lg:text-h4_desk"
+            class="font-inter text-h4_mobil  text-orange-500 lg:text-h4_desk"
           >
             ONLINE INFORMØDE
           </h4>
@@ -491,33 +491,39 @@ import palmer from "../assets/images/palmer.jpg";
             21. Januar 2025 - kl. 17-19
           </p>
         </div>
-        <div class="py-m">KNAP</div>
+        <div class="pt-s">
+        <Button >
+          TILMELD DIG ET INFOMØDE
+        </Button>
+      </div>
+    </div>
+
       </div>
     </section>
 
-    <section class="px-lg py-lg">
-      <div class="grid grid-cols-2">
+    <section class="px-m py-m text-center text-orange-500">
+      <div class="grid grid-cols-2 gap-sm">
         <div>
-          <Image src={ligeværd} class="" alt="billede af stemning" />
-          <h3 class="font-inter font-bold text-h3_mobil text-gron-800">
+          <Image src={ligeværd} class="h-[300px] w-[400px]  rounded-medium" alt="billede af stemning" />
+          <h3 class="font-inter font-bold text-h3_mobil ">
             LIGEVÆRD & RESPEKT
           </h3>
         </div>
         <div>
-          <Image src={integritet} class="" alt="billede af stemning" />
-          <h3 class="font-inter font-bold text-h3_mobil text-gron-800">
+          <Image src={integritet} class="h-[300px] w-[400px]  rounded-medium" alt="billede af stemning" />
+          <h3 class="font-inter font-bold text-h3_mobil">
             INTEGRITET & ÆRLIGHED
           </h3>
         </div>
         <div>
-          <Image src={mod} class="" alt="billede af stemning" />
-          <h3 class="font-inter font-bold text-h3_mobil text-gron-800">
+          <Image src={mod} class="h-[300px] w-[400px]  rounded-medium" alt="billede af stemning" />
+          <h3 class="font-inter font-bold text-h3_mobil">
             MOD & RUMMELIGHED
           </h3>
         </div>
         <div>
-          <Image src={fællesskab} class="" alt="billede af stemning" />
-          <h3 class="font-inter font-bold text-h3_mobil text-gron-800">
+          <Image src={fællesskab} class="h-[300px] w-[400px]  rounded-medium" alt="billede af stemning" />
+          <h3 class="font-inter font-bold text-h3_mobil">
             FÆLLESSKAB & SJOV
           </h3>
         </div>
@@ -525,8 +531,10 @@ import palmer from "../assets/images/palmer.jpg";
     </section>
 
     <section
-      class="p-lg px-2xl bg-orange-300 lg:grid lg:grid-cols-2 lg:gap-2xl"
+      class="p-lg px-2xl bg-orange-300 "
     >
+    <div class="lg:grid lg:grid-cols-2 lg:gap-2xl">
+
       <div class="">
         <h2
           class="font-inter font-bold text-gron-950 text-h2_mobil pb-s lg:text-h2_desk"
@@ -577,12 +585,15 @@ import palmer from "../assets/images/palmer.jpg";
           Opdag dit livs eventyr med HÖJSKOLENDK!
         </p>
       </div>
+    </div>
 
-      <Image
-        src={palme}
-        alt="billede af palme"
-        class="block mx-auto max-w-full"
-      />
+      <div class="flex items-center justify-center pt-m">
+        <Image
+          src={palme}
+          alt="billede af palme"
+          class="block w-[60px]"
+        />
+      </div>
     </section>
 
     <section class="px-lg pb-lg">
