@@ -1,6 +1,74 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import footer_mob from "../assets/images/footer_img_mobil.jpg";
+import skov from "../assets/images/skov.png";
+
+import insta from "../assets/images/insta.svg";
+import tiktok from "../assets/images/tiktok.svg";
+import face from "../assets/images/face.svg";
+import you from "../assets/images/youtube.svg";
+import link from "../assets/images/link.svg";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
-</div>
-  
+
+<section>
+  <Image
+    src={footer_mob}
+    alt=""
+    class="w-full h-[800px] object-cover absolute"
+  />
+  <div class="relative pt-[300px] px-m">
+    <h2 class="text-h2_mobil text-orange-500 font-bold md:text-h2_desk">
+      BÆREDYGTIGHED
+    </h2>
+    <h1 class="text-h1_mobil text-blaa-900 font-acme md:text-h1_desk">
+      VI GØR EN FORSKEL
+    </h1>
+    <p
+      class="text-p_mobil text-blaa-900 font-inter md:text-p_desk lg:w-[900px]"
+    >
+      Vi tror på, at alle kan bidrage til en bedre verden – også en højskole fra
+      Danmark. <br />Derfor støtter vi Verdens Skoves indsats for at bevare og
+      fremme bæredygtig brug af jordens skove. Indtil nu har vi været med til at
+      beskytte hele 106.785 m² regnskov, og det er vi utrolig stolte af hos
+      HÖJSKOLENDK.
+    </p>
+    <Image src={skov} alt="" class="w-[200px] lg:w-[300px] pt-m mx-auto" />
+  </div>
+</section>
+<section class="pt-6xl px-m pb-m lg:flex lg:justify-between p-m">
+  <div>
+    <h2 class="text-h2_mobil text-blaa-900 font-bold md:text-h2_desk">
+      HÖJSKOLENDK
+    </h2>
+    <p class="text-p_mobil text-blaa-900 font-inter md:text-p_desk">
+      Rosenørns Allé 29 <br />1970 Frederiksberg <br />Danmark
+    </p>
+  </div>
+  <div>
+    <h2 class="text-h2_mobil text-blaa-900 font-bold md:text-h2_desk">
+      KONTAKT
+    </h2>
+    <p class="text-p_mobil text-blaa-900 font-inter md:text-p_desk">
+      Telefon: 70 27 90 07 <br />Mandag til Fredag - Kl. 10.00-16.00 <br />Mail:
+      info@hojskolendk.dk
+    </p>
+    <div class="flex flex-row gap-m">
+      <Image src={insta} alt="" class="w-[40px] py-m" />
+      <Image src={tiktok} alt="" class="w-[40px] py-m" />
+      <Image src={you} alt="" class="w-[40px] py-m" />
+      <Image src={face} alt="" class="w-[40px] py-m" />
+      <Image src={link} alt="" class="w-[40px] py-m" />
+    </div>
+  </div>
+  <div>
+    <h2 class="text-h2_mobil text-blaa-900 font-bold md:text-h2_desk">
+      SAMARBEJDSPARTNERE
+    </h2>
+    <p class="text-p_mobil text-blaa-900 font-inter md:text-p_desk">
+      Rejsegarantifonden <br /> Jysk Rejsebureau <br /> Gouda Rejseforsikring <br
+      />Verdens Skove <br /> Co2 Neutrale Website
+    </p>
+  </div>
+</section>
