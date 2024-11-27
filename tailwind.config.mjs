@@ -92,7 +92,7 @@ export default {
       "5xl": "112px",
       "6xl": "128px",
       "7xl": "112px",
-      "8xl": "128px",
+      "8xl": "328px",
       "9xl": "424px",
     },
 
