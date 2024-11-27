@@ -36,16 +36,34 @@ import palmer from "../assets/images/palmer.jpg";
 <MainLayout title="Titel">
   <article>
     <section id="hero">
-      <h1
-        class="font-acme text-h1_mobil text-blaa-300 lg:text-h1_desk grid justify-items-center"
-      >
-        HØJSKOLE I UDLANDET
-      </h1>
-      <h2
-        class="font-inter text-h2_mobil font-bold text-blaa-300 lg:text-h2_desk grid justify-items-center"
-      >
-        EVENTYRLIGE HØJSKOLEOPHOLD I UDLANDET FOR UNGE
-      </h2>
+      <div class="relative w-full h-screen overflow-hidden">
+        <!-- Video -->
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="hojskolenDK.mp4" type="video/mp4" />
+        </video>
+
+        <!-- Overlay indhold -->
+        <div
+          class="absolute inset-0 top-8xl md:left-xl md:top-8xl lg:left-8xl lg:top-9xl text-center text-blaa-50"
+        >
+          <div>
+            <h1 class="font-acme text-h1_mobil text-blaa-300 lg:text-h1_desk">
+              HØJSKOLE I UDLANDET
+            </h1>
+            <h2
+              class="font-inter text-h2_mobil font-bold text-blaa-300 px-xl lg:text-h2_desk"
+            >
+              EVENTYRLIGE HØJSKOLEOPHOLD I UDLANDET FOR UNGE
+            </h2>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="px-lg lg:px-8xl pt-m">
