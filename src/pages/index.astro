@@ -48,13 +48,13 @@ import palmer from "../assets/images/palmer.jpg";
       </h2>
     </section>
 
-    <section class="px-lg lg:px-2xl pt-m">
+    <section class="px-lg lg:px-8xl pt-m">
       <h2
         class="font-inter text-h2_mobil font-bold lg:text-h2_desk pt-lg text-blaa-950 lg:grid lg:justify-items-center"
       >
         SKAB MINDER FOR LIVET - KOM PÅ HØJSKOLEEVENTYR!
       </h2>
-      <div class="lg:grid lg:grid-cols-2 pt-s">
+      <div class="lg:grid lg:grid-cols-2 pt-s gap-m lg:px-3xl">
         <p class="font-inter text-p_mobil lg:text-p_desk text-blaa-950">
           Tag på højskole i udlandet og oplev verden på en helt ny måde! Hos
           HÖJSKOLENDK kombinerer vi rejseeventyr, fællesskab og spændende
@@ -154,19 +154,21 @@ import palmer from "../assets/images/palmer.jpg";
       </div>
     </section>
 
-    <section class="relative w-full px-xs py-2xl pt-m bg-gron-600 text-blaa-950">
+    <section class="relative w-full px-xs py-2xl pt-m bg-gron-600 text-blaa-950 lg:px-4xl">
       <div class="mx-auto px-m py-m">
         <div class="">
           <h2 class="my-s text-h2_mobil md:text-xl font-bold">
             SPØRGSMÅL OG SVAR TIL OFTE STILLEDE SPØRGSMÅL
           </h2>
         </div>
-        <div class="mt-s">
+        <div class="lg:grid lg:grid-cols-2 gap-xl">
+        <div>
+        <div class="mt-s ">
           <!-- FAQ Item 1 -->
           <div class="py-xs">
             <details class="group divide-y divide-solid divide-blaa-950 ">
               <summary
-                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+                class="flex items-center justify-between cursor-pointer text-h3_mobil font-semibold"
               >
                 <span>HVAD KOSTER ET HØJSKOLEOPHOLD?</span>
                 <span class="transition group-open:rotate-180">
@@ -197,7 +199,7 @@ import palmer from "../assets/images/palmer.jpg";
           <div class="pt-xs">
             <details class="group divide-y divide-solid divide-blaa-950">
               <summary
-                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+                class="flex items-center justify-between cursor-pointer text-h3_mobil font-semibold"
               >
                 <span>HVORNÅR ER DER INFOMØDER?</span>
                 <span class="transition group-open:rotate-180">
@@ -231,7 +233,7 @@ import palmer from "../assets/images/palmer.jpg";
           <div class="py-xs">
             <details class="group divide-y divide-solid divide-blaa-950">
               <summary
-                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+                class="flex items-center justify-between cursor-pointer text-h3_mobil font-semibold"
               >
                 <span>GÅR I OP I BÆREDYGTIGHED?</span>
                 <span class="transition group-open:rotate-180">
@@ -257,13 +259,13 @@ import palmer from "../assets/images/palmer.jpg";
             </details>
           </div>
         </div>
-
+      </div>
         <div class="mt-s">
           <!-- FAQ Item 4-->
           <div class="py-xs">
             <details class="group divide-y divide-solid divide-blaa-950">
               <summary
-                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+                class="flex items-center justify-between cursor-pointer text-h3_mobil font-semibold"
               >
                 <span>KAN MAN TAGE AFSTED UD AT KENDE NOGLE?</span>
                 <span class="transition group-open:rotate-180">
@@ -297,7 +299,7 @@ import palmer from "../assets/images/palmer.jpg";
           <div class="py-xs">
             <details class="group divide-y divide-solid divide-blaa-950">
               <summary
-                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+                class="flex items-center justify-between cursor-pointer text-h3_mobil font-semibold"
               >
                 <span>ER DER MEGET FRITID?</span>
                 <span class="transition group-open:rotate-180">
@@ -332,7 +334,7 @@ import palmer from "../assets/images/palmer.jpg";
           <div class="py-xs">
             <details class="group divide-y divide-solid divide-blaa-950">
               <summary
-                class="flex items-center justify-between cursor-pointer text-h3_mobil"
+                class="flex items-center justify-between cursor-pointer text-h3_mobil font-semibold"
               >
                 <span>HVAD GØR I FOR AT SKABE ET GODT FÆLLESSKAB?</span>
                 <span class="transition group-open:rotate-180">
@@ -361,6 +363,10 @@ import palmer from "../assets/images/palmer.jpg";
           </div>
         </div>
       </div>
+
+      </div>
+    </div>
+
     </section>
 
     <section class="px-lg">
@@ -403,14 +409,14 @@ import palmer from "../assets/images/palmer.jpg";
       <div
         class="lg:grid lg:grid-cols-4 justify-items-center justify-self-center gap-xs h-full w-auto hidden lg:block"
       >
-        <Image src={stemning1} class="" alt="billede af stemning" />
-        <Image src={stemning2} class="" alt="billede af stemning" />
-        <Image src={stemning3} class="" alt="billede af stemning" />
-        <Image src={stemning4} class="" alt="billede af stemning" />
-        <Image src={stemning5} class="" alt="billede af stemning" />
-        <Image src={stemning6} class="" alt="billede af stemning" />
-        <Image src={stemning7} class="" alt="billede af stemning" />
-        <Image src={stemning8} class="" alt="billede af stemning" />
+        <Image src={stemning1} class="h-[400px] rounded-small object-cover" alt="billede af stemning" />
+        <Image src={stemning2} class="h-[400px] rounded-small object-cover" alt="billede af stemning" />
+        <Image src={stemning3} class="h-[400px] rounded-small object-cover" alt="billede af stemning" />
+        <Image src={stemning4} class="h-[400px] rounded-small object-cover" alt="billede af stemning" />
+        <Image src={stemning5} class="h-[400px] rounded-small object-cover" alt="billede af stemning" />
+        <Image src={stemning6} class="h-[400px] rounded-small object-cover" alt="billede af stemning" />
+        <Image src={stemning7} class="h-[400px] rounded-small object-cover" alt="billede af stemning" />
+        <Image src={stemning8} class="h-[400px] rounded-small object-cover" alt="billede af stemning" />
       </div>
 
       <p class="font-inter text-h4_mobil italic lg:text-p_desk pb-s pt-m">
