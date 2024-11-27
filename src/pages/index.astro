@@ -517,7 +517,7 @@ import palmer from "../assets/images/palmer.jpg";
     </p>
   </section>
 
-  <section class="bg-blaa-200 lg:grid lg:grid-cols-2 p-m">
+  <section class="bg-blaa-200 lg:grid lg:grid-cols-2 lg:h-[1000px]">
     <Image
       src={infobillede}
       class="block lg:hidden rounded-small h-[440px] object-cover"
@@ -525,11 +525,11 @@ import palmer from "../assets/images/palmer.jpg";
     />
     <Image
       src={storinfobillede}
-      class="hidden lg:block"
+      class="hidden lg:block h-full"
       alt="billede af stemning"
     />
 
-    <div>
+    <div class="pl-m">
       <h2
         class="font-inter text-h2_mobil text-blaa-900 font-bold pt-m lg:text-h2_desk"
       >
@@ -574,14 +574,14 @@ import palmer from "../assets/images/palmer.jpg";
           21. Januar 2025 - kl. 17-19
         </p>
       </div>
-      <div class="pt-s">
+      <div class="py-s">
         <Button> TILMELD DIG ET INFOMØDE </Button>
       </div>
     </div>
   </section>
 
 <section
-  class="flex items-center justify-center min-h-screen px-m py-m text-center text-orange-500"
+  class="flex items-center justify-center min-h-screen px-m py-xl text-center text-orange-500"
 >
   <div class="grid grid-cols-2 gap-sm">
     <div>
